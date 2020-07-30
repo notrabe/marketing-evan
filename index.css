@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* body */
+body{
+    color: #660000;
+    background-color: white;
+    font-family: Bebas Neue;
+    text-align: center;
+    font-size: large;
+}
+
+span.italic{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#home{
+    background-color: #ff4d4d;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#about{
+    margin-bottom: 2%;
+}
+
+#contact{
+    margin-top: 1.5%;
+    border-top: 2px solid black;
+    background-color: #ff4d4d;
+}
+
+
+/* header and a tags */
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+
+a{
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding:0.3%;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: gainsboro;
+    transition: .3s;
+}
+
+button{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: bebas neue;
+    font-size: large;
+}
+
+button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+}
+
+button:hover{
+    background-color: gainsboro;
+    transition: .3s;
+}
+
+#about a:hover{
+    background-color: gainsboro;
+    transition: .3s;
+}
+
+#about p{
+    width:40%;
+    margin:auto;
+    margin-bottom: 1%;
+    margin-top:1%;
+}
+
+
+
+
+/* images */
+img{
+    border-radius:8px;
+    border:2px solid black;
+    margin-left:.5%;
+    margin-right:.5%;
+}
+
+/* contact */
+
+ul{
+    padding:1%;
+    list-style: none;
+}
+
+/* about page */
+
+#about2 img{
+    margin-right: 5%;
+    max-width: 35%;
+}
+
+#about2 p{
+    display: flex;
+    justify-content: start;
+}
+
+.bigContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container1, .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a{
+    border:none;
+    text-decoration-line: underline;
+}
+
+
+footer{
+    background-color:#ff4d4d;
+    display:flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+}
+
+
+@media (max-width:500px){
+    header nav{
+        display: flex;
+        flex-direction:column ; 
+        align-items: center;
+    }
+
+
+    a{
+        width: 20%;
+        border: none;
+        border: 2px solid black;
+        margin:.5%;
+    }
+    #about .img{
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        margin: 0 1% 0 1% ;
+    }
+
+    #about img{
+        margin-bottom:1%;
+    }
+    .bigContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        padding:1%;
+        width:20%;
+    }
+
+    button:hover{
+        background-color:darkred;
+        transition:.15s;
+    }
+
+    #about p{
+        width: 100%;
+        margin-bottom:2%;
+    }
+
+    #contact{
+        margin-top: 5%;
+    }
+
+}
+
+@media (max-width:800px){
+    .img{
+        display: flex;
+        max-width:auto;
+        margin-left:1%;
+        margin-right:1%;
+    }
+}
