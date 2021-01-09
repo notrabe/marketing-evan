@@ -42,6 +42,7 @@ span.italic{
     background-color: #ff4d4d;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+    margin-top:5rem;
 }
 
 #about{
@@ -60,6 +61,14 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     padding: 1%;
+}
+
+#navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width:100%;
+    border-bottom: 2px solid black;
 }
 
 
@@ -131,10 +140,13 @@ ul{
 
 /* about page */
 
+#about2 {
+    margin-top:6rem;
+}
+
 #about2 img{
     margin-right: 5%;
     width:35%;
-    
 }
 
 #about2 p{
@@ -173,6 +185,16 @@ footer{
         display: flex;
         flex-direction:column ; 
         align-items: center;
+    }
+
+    #navbar{
+        position: relative;
+        border-bottom:none;
+        margin-bottom:-1rem;
+    }
+
+    #about2{
+        margin-top: -1rem;
     }
 
 
@@ -225,15 +247,23 @@ footer{
         font-size: larger;
     }
 
+    /* #navbar{
+        border-bottom: 2px solid black;
+    } */
+
+    #home{
+        margin-top: 2rem;
+    }
+
     button{
         font-size: large;
     }
 
     .img{
         display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width:auto;
-        margin-left:1%;
-        margin-right:1%;
     }
 
     #home p{
@@ -246,7 +276,11 @@ footer{
     }
 
     #about img{
-        max-width: 95%;
+        margin:1%;
     }
 
+}
+
+@media (max-width:1100px){
+    
 }
